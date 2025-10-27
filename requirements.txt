@@ -2,3 +2,9 @@ ultralytics
 streamlit
 Pillow
 opencv-python
+matplotlib
+pandas
+numpy
+seaborn
+scikit-learn
+ipykernel
