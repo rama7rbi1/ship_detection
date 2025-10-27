@@ -10,7 +10,7 @@ st.set_page_config(page_title="Ship Detection", layout="centered")
 # load_model
 @st.cache_resource
 def load_model():
-    model = YOLO("models/best.pt")  #this file sholud be at the same folder
+    model = YOLO("web_interface/models/best.pt")  #this file sholud be at the same folder
     return model
 
 model = load_model()
