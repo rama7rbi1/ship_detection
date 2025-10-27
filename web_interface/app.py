@@ -2,6 +2,8 @@ import streamlit as st
 from PIL import Image
 import io, base64
 import numpy as np
+import os
+import gdown
 from ultralytics import YOLO
 
 
@@ -10,7 +12,14 @@ st.set_page_config(page_title="Ship Detection", layout="centered")
 # load_model
 @st.cache_resource
 def load_model():
-    model = YOLO("models/best.pt")  #this file sholud be at the same folder
+    #model = YOLO("models/best.pt")  #this file sholud be at the same folder
+    #add
+    model_path = "models/best.pt"
+    if not os.path.exists(model_path):
+        os.makedirs("models", exist_ok=True)
+        url = "https://drive.google.com/drive/folders/1s23ugG10tRobWYJUVYLlQjE6lCVz4VkY"
+        gdown.download(url, model_path, quit=False)
+    model = YOLO(model_path)
     return model
 
 model = load_model()
