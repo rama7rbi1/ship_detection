@@ -1,6 +1,7 @@
 raw_data/
 web_interface/models/*
 !web_interface/models/.keep
+!web_interface/models/best.pt
 
 .python-version
 
