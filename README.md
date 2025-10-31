@@ -48,4 +48,5 @@ Visit [http://localhost:8501](http://localhost:8501)
 
 ## Model
 the app uses a YOLO model saved as best.pt placed in:
+
 web_interface/models/best.pt
