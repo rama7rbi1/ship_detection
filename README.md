@@ -12,6 +12,7 @@ Acceess the deployed app here:
 ```bash
 git clone https://github.com/rama7rbi1/ship_detection.git
 cd ship_detection
+```
 
 Build Doucker image:
 
