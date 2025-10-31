@@ -1,10 +1,24 @@
 # ship_detection Web App
-A Streamlit-based web application for detecting ships using a YOLO model.
+A Streamlit-based web application for detecting ships using a fine-tuned YOLOv8 model.
 
 ## Live App
 Acceess the deployed app here:
 [Ship Detection App (Streamlit)](https://shipdetection-gfpqehysukeayqtfwnnsgr.streamlit.app/)
 
+## Overview
+This project was built as part of the **Le Wagon x SDA Data Science Bootcamp**.
+We developed a ship detection system trained on **26,000 annotated satellite images** using **YOLOv8**, and deployed it with **Streamlit** for real-time interaction.
+
+### key Features 
+- Detect ships in satellite images
+- Fast and lightweight - runs in real time
+- Helps in monitoring illegal maritime activity and managing port traffic
+---
+## Model Performance 
+- **Mean Average Precision (mAP):** 50.66%
+- **Recall:** 51.42%
+- **Inference Speed:** 1.3ms/image
+---
 ## Setup (local)
 
 **Clone the repository:**
@@ -14,11 +28,11 @@ git clone https://github.com/rama7rbi1/ship_detection.git
 cd ship_detection
 ```
 
-Build Doucker image:
+**Build Doucker image:**
 
 docker build -t ship-detection-app .
 
-Run the container:
+**Run the container:**
 
 docker run -p 8501:8501 ship-detection-app
 
