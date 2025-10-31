@@ -7,18 +7,23 @@ Acceess the deployed app here:
 
 ## Setup (local)
 
-1. **Clone the repository:**
-'''bash
+**Clone the repository:**
+
+```bash
+
 git clone https://github.com/rama7rbi1/ship_detection.git
+
 cd ship_detection
 
-3. Build Doucker image:
+Build Doucker image:
+
 docker build -t ship-detection-app .
 
-4. Run the container:
+Run the container:
+
 docker run -p 8501:8501 ship-detection-app
 
-5. Visit [http://localhost:8501](http://localhost:8051)
+Visit [http://localhost:8501](http://localhost:8051)
 
 ## Requirements
 - python 3.10
