@@ -12,7 +12,7 @@ We developed a ship detection system trained on **26,000 annotated satellite ima
 ### key Features 
 - Detect ships in satellite images
 - Fast and lightweight - runs in real time
-- Helps in monitoring illegal maritime activity and managing port traffic
+- Helps in managing port traffic
 ---
 ## Model Performance 
 - **Mean Average Precision (mAP):** 50.66%
